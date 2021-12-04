@@ -15,3 +15,9 @@ La tarea consiste en implementar un algoritmo que use el algoritmo de join de la
 ![T1E2](https://i.imgur.com/ZKuoCYx.png)
 
 *Lenguaje utilizado: Python 3.x*
+
+## Tarea 2
+
+### Multiplicación de Matrices: Algoritmo de Strassen vs. Algoritmo común
+
+La tarea consiste en comparar el tiempo de ejecución de la multiplicación de dos matrices de n x n usando el algoritmo de Strassen y el método normal.
