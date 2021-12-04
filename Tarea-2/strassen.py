@@ -91,7 +91,7 @@ def strassen(matrix_a, matrix_b):
     return matrix_todos
 
 case = str(input('Caso: '))
-archivo = open('caso'+case+'.txt', 'r')
+archivo = open('Tarea-2/caso'+case+'.txt', 'r')
 lineas = archivo.readlines()
 for x in range(len(lineas)):
     lineas[x] = lineas[x].strip().split()

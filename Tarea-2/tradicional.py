@@ -2,7 +2,7 @@ import numpy as np
 import time
 
 case = str(input('Caso: '))
-archivo = open('caso'+case+'.txt', 'r')
+archivo = open('Tarea-2/caso'+case+'.txt', 'r')
 lineas = archivo.readlines()
 for x in range(len(lineas)):
     lineas[x] = lineas[x].strip().split()
