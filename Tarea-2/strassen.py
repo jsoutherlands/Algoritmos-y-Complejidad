@@ -1,4 +1,3 @@
-import numpy as np
 import time
 
 num_sumres = 0
@@ -57,9 +56,12 @@ def strassen(matrix_a, matrix_b):
 		matrix_todos = [list() for i in range(fila)]
 		matrix_todos[0].append(matrix_a[0][0] * matrix_b[0][0])
 	elif(fila % 2 ==1):
-		matrix_a_np = np.array(matrix_a)
-		matrix_b_np = np.array(matrix_b)
-		matrix_todos = np.dot(matrix_a_np, matrix_b_np)
+		matrix_todos = [[0]*fila for y in range(fila)]
+		for i in range(fila):
+			for j in range(fila):
+				matrix_todos[i][j] = 0
+				for k in range(fila):
+					matrix_todos[i][j] += (matrix_a[i][k]*matrix_b[k][j])
 		global num_mul,num_sumres
 		num_mul = num_mul + 27
 		num_sumres = num_sumres + 18
@@ -106,11 +108,13 @@ C = strassen(A,B)
 end = time.time()
 
 print(str(len(C)))
+
 line = ""
 for i in C:
 	for j in i:
 		line += str(j) + " "
 	print(line)
 	line = ""
+
 print("Tiempo de ejecución: " + str(end-start))
 archivo.close()
