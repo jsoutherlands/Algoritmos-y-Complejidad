@@ -1,7 +1,7 @@
 import time
+import sys
 
-case = str(input('Caso: '))
-archivo = open('Casos/caso'+case+'.txt', 'r')
+archivo = open(sys.argv[1], 'r')
 lineas = archivo.readlines()
 for x in range(len(lineas)):
 	lineas[x] = lineas[x].strip().split()
@@ -10,7 +10,7 @@ for x in range(len(lineas)):
 n = lineas[0][0]
 A = lineas[1:n+1]
 B = lineas[n+1:n*2+1]
-C = [[0 for x in range(n)] for y in range(n)] 
+C = [[0 for x in range(n)] for y in range(n)]
 start = time.time()
 for i in range(n):
 	for j in range(n):

@@ -1,4 +1,5 @@
 import time
+import sys
 
 num_sumres = 0
 num_mul = 0
@@ -92,8 +93,7 @@ def strassen(matrix_a, matrix_b):
 		num_assign = num_assign + 22
 	return matrix_todos
 
-case = str(input('Caso: '))
-archivo = open('Casos/caso'+case+'.txt', 'r')
+archivo = open(sys.argv[1], 'r')
 lineas = archivo.readlines()
 for x in range(len(lineas)):
 	lineas[x] = lineas[x].strip().split()

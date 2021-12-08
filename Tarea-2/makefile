@@ -1,6 +1,57 @@
-run-strassen:
-	python3 strassen.py
-run-strassenNumpy:
-	python3 strassenNumpy.py
-run-tradicional:
-	python3 tradicional.py
+ssn := python3 strassen.py Casos/caso
+scn := python3 strassenNumpy.py Casos/caso
+tra := python3 tradicional.py Casos/caso
+strassen-1:
+	$(ssn)1.txt
+strassen-2:
+	$(ssn)2.txt
+strassen-3:
+	$(ssn)3.txt
+strassen-4:
+	$(ssn)4.txt
+strassen-5:
+	$(ssn)5.txt
+strassen-6:
+	$(ssn)6.txt
+strassen-7:
+	$(ssn)7.txt
+strassen-8:
+	$(ssn)8.txt
+strassen-9:
+	$(ssn)9.txt
+strassenNumpy-1:
+	$(scn)1.txt
+strassenNumpy-2:
+	$(scn)2.txt
+strassenNumpy-3:
+	$(scn)3.txt
+strassenNumpy-4:
+	$(scn)4.txt
+strassenNumpy-5:
+	$(scn)5.txt
+strassenNumpy-6:
+	$(scn)6.txt
+strassenNumpy-7:
+	$(scn)7.txt
+strassenNumpy-8:
+	$(scn)8.txt
+strassenNumpy-9:
+	$(scn)9.txt
+tradicional-1:
+	$(tra)1.txt
+tradicional-2:
+	$(tra)2.txt
+tradicional-3:
+	$(tra)3.txt
+tradicional-4:
+	$(tra)4.txt
+tradicional-5:
+	$(tra)5.txt
+tradicional-6:
+	$(tra)6.txt
+tradicional-7:
+	$(tra)7.txt
+tradicional-8:
+	$(tra)8.txt
+tradicional-9:
+	$(tra)9.txt
